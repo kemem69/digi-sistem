@@ -238,6 +238,9 @@ BUTTONS
 
 *********/
 
+#logo {
+  max-height: 50px;
+}
 
 .btn {
   text-transform: uppercase;
