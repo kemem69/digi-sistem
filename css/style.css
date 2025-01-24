@@ -332,6 +332,9 @@ services icons css
     -webkit-border-radius: 50%;
     border: 1px solid  #03a9f4;
 }
+#services {
+    background-color: #e6e6e6;
+}
 /************
 
 TEAM CSS
