@@ -6,13 +6,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic');
 
+@font-face {
+  font-family: 'segoe';
+  src: url('../font/segoe/normal.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'segoe-bold';
+  src: url('../font/segoe/bold.ttf') format("truetype");
+}
+
 ::selection {
   color: #CDDC39;
 }
 
 body {
   background: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
   font-weight: 400;
   color: #505050;
   -webkit-font-smoothing: antialiased;
@@ -67,7 +77,7 @@ h4,
 h5,
 h6 {
   margin-top: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
 }
 
 .colored-text {
@@ -75,7 +85,7 @@ h6 {
 }
 
 .alo {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
   display: inline-block;
   text-transform: uppercase;
   margin-right: 5px;
@@ -86,6 +96,11 @@ h6 {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 60px;
+  font-family: 'segoe-bold';
+}
+
+.shadow {  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section-title h1 {
@@ -200,7 +215,7 @@ h6 {
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
   letter-spacing: 1px;
 }
 
@@ -248,7 +263,7 @@ BUTTONS
   font-size: 14px;
   letter-spacing: 2px;
   border-radius: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -309,14 +324,15 @@ BUTTONS
 SLIDER REVOLUTION CSS
 
 **************/
-
 .slider-title {
   color: #fff;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 70px;
   letter-spacing: 2px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'segoe-bold';
 }
 
 .slider-title span {
@@ -327,7 +343,7 @@ SLIDER REVOLUTION CSS
   color: #f8f8f8;
   font-size: 16px;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'segoe';
 }
 
 .slider-button a.btn-white {
@@ -384,6 +400,18 @@ services icons css
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+.about-icons .left-side-icon i {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 1px solid #03a9f4;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .services-icons .left-side-icon i {
@@ -762,6 +790,10 @@ cta
   color: #fff;
 }
 
+.text-white {
+  color: #fff;
+}
+
 /***contact****/
 #contact {
   /* background: url(../images/bg-1.jpg);
@@ -769,12 +801,11 @@ cta
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; */
-  background-color: #2B8694;
+  background-color: #76A6C7;
   width: 100%;
   height: auto;
   overflow-x: hidden;
   overflow-y: hidden;
-  vertical-align: middle;
   z-index: 1;
   display: block;
   position: relative;
