@@ -189,13 +189,13 @@ h6 {
 
   }
 
-  nav.before-color .nav>li {
+  /* nav.before-color .nav>li {
     border-left: 1px solid transparent;
   }
 
   nav.after-color .nav>li {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
-  }
+  } */
 }
 
 .navbar-default {
@@ -217,7 +217,7 @@ h6 {
 .navbar-default .navbar-nav>li>a {
   color: #333;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   font-family: 'segoe';
   letter-spacing: 1px;
