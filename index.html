@@ -42,11 +42,11 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right scroll-to">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Solutions</a></li>
-          <li><a href="#work">Projects</a></li>
-          <li><a href="#clients">Customers</a></li>
+          <li class="active"><a href="#home" id="nav-home">Beranda</a></li>
+          <li><a href="#about" id="nav-about">Tentang</a></li>
+          <li><a href="#services" id="nav-solution">Solusi</a></li>
+          <li><a href="#work" id="nav-project">Proyek</a></li>
+          <li><a href="#clients" id="nav-customer">Pelanggan</a></li>
           <!-- <li><a href="#blog">Blog</a></li>
           <li><a href="post-single.html">Blog Post</a></li> -->
           <!-- <li class="dropdown">
@@ -56,7 +56,8 @@
               <li><a href="typography.html">Typography</a></li>
             </ul>
           </li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" id="nav-contact">Kontak Kami</a></li>
+          <li><a onclick="changeLanguage()" id="nav-lang">English</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -67,63 +68,40 @@
   <div class="fullwidthbanner" id="home">
     <div class="tp-banner">
       <ul>
-        <!-- SLIDE 1 -->
         <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
-          <!-- MAIN IMAGE -->
           <img src="images/bg-1.jpg" alt="desk" data-bgfit="cover" data-bgposition="left top"
             data-bgrepeat="no-repeat" />
-          <!-- LAYERS -->
-          <!-- LAYER NR. 1 -->
           <div class="tp-caption slider-title" data-x="center" data-y="center" data-voffset="-30" data-speed="500"
             data-start="1200" data-easing="Power4.easeInOut">
             <span>Digi Sistem Solusindo</span>
           </div>
-          <!-- /tp-caption -->
-          <!-- LAYER NR. 2 -->
           <div class="tp-caption slider-caption" data-x="center" data-y="center" data-voffset="40" data-speed="500"
-            data-start="1800" data-easing="Power4.easeInOut" data-captionhidden="on">
-            Formed by a team of experienced IT Software developers, IT
-            Infrastructure and IT Security consultants
+            data-start="1800" data-easing="Power4.easeInOut" data-captionhidden="on" id="slider-1">
+            Dibentuk oleh tim pengembang Perangkat Lunak TI, Infrastruktur TI, dan konsultan Keamanan TI yang
+            berpengalaman
           </div>
-          <!-- /tp-caption -->
-
-          <!-- LAYER NR. 3 -->
           <div class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120"
             data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
-            <a class="btn btn-white" href="#about">See more</a>
+            <a class="btn btn-white" href="#about" id="see-more-1">Lihat lebih lanjut</a>
           </div>
-          <!-- /tp-caption -->
         </li>
-        <!-- SLIDE 2 -->
         <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
-          <!-- MAIN IMAGE -->
           <img src="images/bg-3.jpg" alt="desk" data-bgfit="cover" data-bgposition="left top"
             data-bgrepeat="no-repeat" />
-
-          <!-- LAYERS -->
-          <!-- LAYER NR. 1 -->
           <div class="tp-caption slider-title" data-x="center" data-y="center" data-voffset="-30" data-speed="500"
             data-start="1200" data-easing="Power4.easeInOut">
             <span>Digi Sistem Solusindo</span>
           </div>
-          <!-- /tp-caption -->
-
-          <!-- LAYER NR. 2 -->
           <div class="tp-caption slider-caption" data-x="center" data-y="center" data-voffset="40" data-speed="500"
-            data-start="1800" data-easing="Power4.easeInOut" data-captionhidden="on">
-            Houses a team of experienced professional, our goal is to serve
-            our customer with effective and reliable solution
+            data-start="1800" data-easing="Power4.easeInOut" data-captionhidden="on" id="slider-2">
+            Memiliki tim profesional yang berpengalaman, tujuan kami adalah melayani pelanggan kami dengan solusi yang
+            efektif dan dapat diandalkan
           </div>
-          <!-- /tp-caption -->
-
-          <!-- LAYER NR. 3 -->
           <div class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120"
             data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
-            <a class="btn btn-white" href="#about">See more</a>
+            <a class="btn btn-white" href="#about" id="see-more-2">Lihat lebih lanjut</a>
           </div>
-          <!-- /tp-caption -->
         </li>
-        <!-- SLIDE 3 -->
       </ul>
     </div>
   </div>
@@ -139,16 +117,16 @@
             </div>
             <!-- </div> -->
             <span class="border-line"></span>
-            <p class="lead subtitle-caption">
-              we are a based in
-              <span class="colored-text">jakarta, indonesia.</span> We use
-              Consultative Approach to evaluate your business and technology
-              needs hence can save your organization time and cost through
-              better use of appropriate technology. Our core values are
-              <span class="colored-text">Growth through creativity</span>,
-              <span class="colored-text">Consulting Partner</span>, and
-              <span class="colored-text">Effectiveness</span>. We provide
-              these services:
+            <p class="lead subtitle-caption" id="about-caption">
+              Kami berkantor pusat di
+              <span class="colored-text">jakarta, indonesia.</span> Kami menggunakan Pendekatan Konsultatif untuk
+              mengevaluasi
+              kebutuhan bisnis dan teknologi Anda sehingga dapat menghemat waktu dan biaya organisasi Anda melalui
+              penggunaan
+              teknologi yang tepat. Nilai-nilai inti kami adalah
+              <span class="colored-text">Pertumbuhan melalui kreativitas</span>,
+              <span class="colored-text">Mitra Konsultasi</span>, dan
+              <span class="colored-text">Efektivitas</span>. Kami menyediakan layanan berikut:
             </p>
           </div>
         </div>
@@ -163,11 +141,11 @@
               </div>
               <i class="ion-ios-lightbulb-outline back-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Consultation</h3>
+            <div class="features-text-right" id="service-1">
+              <h3 class="shadow segoe-bold">Konsultasi</h3>
               <p>
-                We deliver High Quality Consulting to address the needs of our
-                customers in IT Solution (Hardware & Software)
+                Kami memberikan Konsultasi Berkualitas Tinggi untuk menjawab kebutuhan pelanggan kami dalam Solusi TI
+                (Perangkat Keras & Perangkat Lunak)
               </p>
             </div>
           </div>
@@ -178,11 +156,11 @@
               <i class="ion-ios-cart-outline front-icon"></i>
               <i class="ion-ios-cart-outline back-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Procurement</h3>
+            <div class="features-text-right" id="service-2">
+              <h3 class="shadow segoe-bold">Pengadaan</h3>
               <p>
-                Working closely with Principal and authorized distributors to
-                provide cost effective hardware and Software
+                Bekerja sama dengan distributor resmi untuk menyediakan perangkat keras dan perangkat lunak yang hemat
+                biaya
               </p>
             </div>
           </div>
@@ -195,9 +173,9 @@
               <i class="ion-ios-browsers-outline front-icon"></i>
               <i class="ion-ios-browsers-outline back-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Implementation</h3>
-              <p>Supported by experienced team and implemented seamlessly</p>
+            <div class="features-text-right" id="service-3">
+              <h3 class="shadow segoe-bold">Implementasi</h3>
+              <p>Didukung oleh tim yang berpengalaman dan diimplementasikan dengan lancar</p>
             </div>
           </div>
         </div>
@@ -207,12 +185,11 @@
               <i class="ion-ios-gear-outline front-icon"></i>
               <i class="ion-ios-gear-outline back-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Maintenance</h3>
+            <div class="features-text-right" id="service-4">
+              <h3 class="shadow segoe-bold">Pemeliharaan</h3>
               <p>
-                We are here to support you after the solutiondelivered and
-                working well post implementation to support operational
-                performance
+                Kami hadir untuk mendukung Anda setelah solusi diimplementasikan dan berfungsi dengan baik untuk
+                mendukung kinerja operasional
               </p>
             </div>
           </div>
@@ -322,13 +299,12 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2 text-center">
           <div class="section-title">
-            <div class="shadow">
-              <h1>Our <span class="colored-text">Solutions</span></h1>
+            <div class="shadow" id="solution-title">
+              <h1><span class="colored-text">Solusi</span> Kami</h1>
             </div>
             <span class="border-line"></span>
-            <p class="lead subtitle-caption">
-              Why you choose
-              <span class="colored-text">Digi Sistem Solusindo</span>
+            <p class="lead subtitle-caption" id="solution-caption">
+              Mengapa pilih <span class="colored-text">Digi Sistem Solusindo</span>?
             </p>
           </div>
         </div>
@@ -339,15 +315,15 @@
             <div class="left-side-icon">
               <i class="ion-iphone front-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Software Development</h3>
+            <div class="features-text-right" id="solution-1">
+              <h3 class="shadow segoe-bold">Pengembangan Perangkat Lunak</h3>
               <ul>
-                <li>Mobile application (Android & IOS)</li>
-                <li>Desktop Application</li>
-                <li>Web Application</li>
-                <li>Business Support System (BSS)</li>
-                <li>Data Management System</li>
-                <li>Virtual Reality (VR) & Augmented Reality (AR)</li>
+                <li>Aplikasi Seluler (Android & IOS)</li>
+                <li>Aplikasi Komputer</li>
+                <li>Aplikasi Web</li>
+                <li>Sistem Penunjang Bisnis</li>
+                <li>Sistem Manajemen Data</li>
+                <li>Realitas Virtual (VR) & Realitas Tertambah (AR)</li>
               </ul>
             </div>
           </div>
@@ -355,13 +331,13 @@
             <div class="left-side-icon">
               <i class="ion-ios-world-outline front-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Security</h3>
+            <div class="features-text-right" id="solution-2">
+              <h3 class="shadow segoe-bold">Keamanan</h3>
               <ul>
-                <li>Network Security</li>
-                <li>Firewall Security</li>
-                <li>Penetration Test</li>
-                <li>Hardening</li>
+                <li>Keamanan Jaringan</li>
+                <li>Keamanan Firewall</li>
+                <li>Uji Penetrasi</li>
+                <li>Pengerasan Perangkat</li>
               </ul>
             </div>
           </div>
@@ -369,13 +345,13 @@
             <div class="left-side-icon">
               <i class="ion-ios-monitor-outline front-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Maintenance Support</h3>
+            <div class="features-text-right" id="solution-3">
+              <h3 class="shadow segoe-bold">Dukungan Pemeliharaan</h3>
               <ul>
-                <li>Preventive & Corrective Maintenance</li>
-                <li>Maintenance Report & Overview</li>
-                <li>Managed Service</li>
-                <li>Technical Support Assistance</li>
+                <li>Pemeliharaan Preventif & Korektif</li>
+                <li>Laporan Pemeliharaan & Tinjauan Umum</li>
+                <li>Layanan Terkelola</li>
+                <li>Bantuan Dukungan Teknis</li>
               </ul>
             </div>
           </div>
@@ -385,28 +361,29 @@
             <div class="left-side-icon">
               <i class="ion-wrench front-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">IT Infrastructure</h3>
-              <ul>
-                <li>Server & HCI</li>
-                <li>Storage (NAS & SAN)</li>
-                <li>Virtualization & Backup</li>
-                <li>Network Infrastructure</li>
-                <li>Private Network</li>
-                <li>Asset Management</li>
-                <li>Monitoring Devices Infra</li>
-                <li>Cloud</li>
-                <li>CCTV & Access Door</li>
-              </ul>
+            <div class="features-text-right" id="solution-4">
+              <h3 class="shadow segoe-bold">
+                <h3 class="shadow segoe-bold">Infrastruktur TI</h3>
+                <ul>
+                  <li>Server & HCI</li>
+                  <li>Penyimpanan (NAS & SAN)</li>
+                  <li>Virtualisasi & Pencadangan</li>
+                  <li>Infrastruktur Jaringan</li>
+                  <li>Jaringan Pribadi</li>
+                  <li>Manajemen Aset</li>
+                  <li>Infrastruktur Perangkat Pemantauan</li>
+                  <li>Cloud</li>
+                  <li>CCTV & Pintu Akses</li>
+                </ul>
             </div>
           </div>
           <div class="feature-icon-wrap services-icons clearfix">
             <div class="left-side-icon">
               <i class="ion-network front-icon"></i>
             </div>
-            <div class="features-text-right">
-              <h3 class="shadow segoe-bold">Cabling</h3>
-              <p>Structured Cabling Services using standard cables:</p>
+            <div class="features-text-right" id="solution-5">
+              <h3 class="shadow segoe-bold">Pemasangan Kabel</h3>
+              <p>Layanan pengkabelan terstruktur menggunakan kabel standar:</p>
               <ul>
                 <li>Fiber Optic</li>
                 <li>Ethernet (CAT5 / CAT6)</li>
@@ -555,12 +532,12 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="section-title text-center">
-            <div class="shadow">
-              <h1><span class="alo">Project</span> Reference</h1>
+            <div class="shadow" id="project-title">
+              <h1>Referensi <span class="colored-text">Proyek</span></h1>
             </div>
             <span class="border-line"></span>
-            <p class="lead subtitle-caption">
-              Some of the projects that we have worked on:
+            <p class="lead subtitle-caption" id="project-caption">
+              Beberapa proyek yang telah kami kerjakan:
             </p>
           </div>
         </div>
@@ -574,7 +551,7 @@
               <div class="overlay">
                 <span class="overlaycolor"></span>
                 <div class="overlayinfo" style="margin-top: -11px">
-                  <h6>Web App Data Digitalization</h6>
+                  <h6 id="project-1">Digitalisasi Data Aplikasi Web</h6>
                 </div>
               </div>
             </div>
@@ -587,7 +564,7 @@
               <div class="overlay">
                 <span class="overlaycolor"></span>
                 <div class="overlayinfo" style="margin-top: -11px">
-                  <h6>Infrastructure Cable System</h6>
+                  <h6 id="project-2">Infrastruktur Sistem Kabel</h6>
                 </div>
               </div>
             </div>
@@ -600,7 +577,7 @@
               <div class="overlay">
                 <span class="overlaycolor"></span>
                 <div class="overlayinfo" style="margin-top: -11px">
-                  <h6>CCTV Surveillance System</h6>
+                  <h6 id="project-3">Sistem Pengawasan CCTV</h6>
                 </div>
               </div>
             </div>
@@ -615,7 +592,7 @@
               <div class="overlay">
                 <span class="overlaycolor"></span>
                 <div class="overlayinfo" style="margin-top: -11px">
-                  <h6>Penetration Testing Services</h6>
+                  <h6 id="project-4">Layanan Pengujian Penetrasi</h6>
                 </div>
               </div>
             </div>
@@ -628,7 +605,7 @@
               <div class="overlay">
                 <span class="overlaycolor"></span>
                 <div class="overlayinfo" style="margin-top: -11px">
-                  <h6>Virtual Reality</h6>
+                  <h6 id="project-5">Realitas Virtual</h6>
                 </div>
               </div>
             </div>
@@ -641,7 +618,7 @@
               <div class="overlay">
                 <span class="overlaycolor"></span>
                 <div class="overlayinfo" style="margin-top: -11px">
-                  <h6>HR Management Systems</h6>
+                  <h6 id="project-6">Sistem Manajemen Sumber Daya Manusia</h6>
                 </div>
               </div>
             </div>
@@ -656,11 +633,11 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="section-title text-center">
-            <div class="shadow">
-              <h1><span class="alo">Customers</span> Reference</h1>
+            <div class="shadow" id="customer-title">
+              <h1>Referensi <span class="colored-text">Pelanggan</span></h1>
             </div>
             <span class="border-line"></span>
-            <p class="lead subtitle-caption">Some of our happy customers:</p>
+            <p class="lead subtitle-caption" id="customer-caption">Beberapa pelanggan kami yang senang:</p>
           </div>
         </div>
       </div>
@@ -774,12 +751,12 @@
         <div class="col-sm-8 col-sm-offset-2">
           <div class="section-title text-center text-white">
             <div class="shadow">
-              <h1><span class="alo">Contact</span> Us</h1>
+              <h1 id="contact-title">Kontak Kami</h1>
             </div>
             <span class="border-line"></span>
           </div>
           <div class="row contact-details">
-            <div class="col-sm-4 margin-bottom30 text-center">
+            <div class="col-sm-6 margin-bottom30 text-center">
               <i class="ion-ios-location-outline"></i>
               <h4>
                 Alamanda Tower Lantai 2, Jl. TB Simatupang No.22 26,
@@ -787,18 +764,18 @@
                 DKI Jakarta, 12430, Indonesia
               </h4>
             </div>
-            <div class="col-sm-4 margin-bottom30 text-center">
+            <div class="col-sm-6 margin-bottom30 text-center">
               <i class="ion-ios-email-outline"></i>
               <a href="mailto:sales@digi-sistem.co.id">
                 <h4>sales@digi-sistem.co.id</h4>
               </a>
             </div>
-            <div class="col-sm-4 margin-bottom30 text-center">
+            <!-- <div class="col-sm-4 margin-bottom30 text-center">
               <i class="ion-ios-telephone-outline"></i>
               <a href="https://wa.me/628120421838" target="_blank">
                 <h4>+62 812 0421 838</h4>
               </a>
-            </div>
+            </div> -->
           </div>
           <!--contact details-->
         </div>
@@ -866,13 +843,13 @@
   <footer class="footer">
     <div class="container text-center">
       <span class="alo">PT. Digi Sistem Solusindo</span>
-      <span class="footer-p">Technology Solution at Your Service</span>
+      <span class="footer-p" id="footer-caption">Solusi Teknologi Siap Melayani Anda</span>
       <!-- <ul class="social list-inline">
         <li><a href="#"><i class="icon icon-social-twitter"></i></a></li>
         <li><a href="#"><i class="icon icon-social-facebook"></i></a></li>
         <li><a href="#"><i class="icon icon-social-dribbble"></i></a></li>
       </ul> -->
-      <span class="copyright">&copy; Copyright 2025. PT. Digi Sistem Solusindo</span>
+      <span class="copyright" id="copyright">&copy; Hak Cipta 2025. PT. Digi Sistem Solusindo</span>
     </div>
   </footer>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -889,6 +866,88 @@
   <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
   <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
   <script src="js/template.js" type="text/javascript"></script>
+  <script>
+    var lang = "id"
+    var changeLanguage = () => {
+      if (lang === "id") {
+        lang = "en"
+        document.getElementById("nav-home").innerHTML = "Home";
+        document.getElementById("nav-about").innerHTML = "About";
+        document.getElementById("nav-solution").innerHTML = "Solutions";
+        document.getElementById("nav-project").innerHTML = "Projects";
+        document.getElementById("nav-customer").innerHTML = "Customers";
+        document.getElementById("nav-contact").innerHTML = "Contact Us";
+        document.getElementById("nav-lang").innerHTML = "Bahasa";
+        document.getElementById("slider-1").innerHTML = "Formed by a team of experienced IT Software developers, IT Infrastructure, and IT Security consultants";
+        document.getElementById("slider-2").innerHTML = "Houses a team of experienced professional, our goal is to serve our customer with effective and reliable solution";
+        document.getElementById("see-more-1").innerHTML = "See more";
+        document.getElementById("see-more-2").innerHTML = "See more";
+        document.getElementById("about-caption").innerHTML = `We are a based in <span class="colored-text">jakarta, indonesia.</span> We use Consultative Approach to evaluate your business and technology needs hence can save your organization time and cost through better use of appropriate technology. Our core values are <span class="colored-text">Growth through creativity</span>, <span class="colored-text">Consulting Partner</span>, and <span class="colored-text">Effectiveness</span>. We provide these services:`;
+        document.getElementById("service-1").innerHTML = `<h3 class="shadow segoe-bold">Consultation</h3><p>We deliver High Quality Consulting to address the needs of our customers in IT Solution (Hardware & Software)</p>`;
+        document.getElementById("service-2").innerHTML = `<h3 class="shadow segoe-bold">Procurement</h3><p>Working closely with Principal and authorized distributors toprovide cost effective hardware and Software</p>`;
+        document.getElementById("service-3").innerHTML = `<h3 class="shadow segoe-bold">Implementation</h3><p>Supported by experienced team and implemented seamlessly</p>`;
+        document.getElementById("service-4").innerHTML = `<h3 class="shadow segoe-bold">Maintenance</h3><p>We are here to support you after the solution delivered and working well post implementation to support operational performance</p>`;
+        document.getElementById("solution-title").innerHTML = `<h1>Our <span class="colored-text">Solutions</span></h1>`;
+        document.getElementById("solution-caption").innerHTML = `Why you choose <span class="colored-text">Digi Sistem Solusindo</span>?`;
+        document.getElementById("solution-1").innerHTML = `<h3 class="shadow segoe-bold">Software Development</h3><ul><li>Mobile application (Android & IOS)</li><li>Desktop Application</li><li>Web Application</li><li>Business Support System (BSS)</li><li>Data Management System</li><li>Virtual Reality (VR) & Augmented Reality (AR)</li></ul>`;
+        document.getElementById("solution-2").innerHTML = `<h3 class="shadow segoe-bold">Security</h3><ul><li>Network Security</li><li>Firewall Security</li><li>Penetration Test</li><li>Hardening</li></ul>`;
+        document.getElementById("solution-3").innerHTML = `<h3 class="shadow segoe-bold">Maintenance Support</h3><ul><li>Preventive & Corrective Maintenance</li><li>Maintenance Report & Overview</li><li>Managed Service</li><li>Technical Support Assistance</li></ul>`;
+        document.getElementById("solution-4").innerHTML = `<h3 class="shadow segoe-bold">IT Infrastructure</h3><ul><li>Server & HCI</li><li>Storage (NAS & SAN)</li><li>Virtualization & Backup</li><li>Network Infrastructure</li><li>Private Network</li><li>Asset Management</li><li>Monitoring Devices Infrastructure</li><li>Cloud</li><li>CCTV & Access Door</li></ul>`;
+        document.getElementById("solution-5").innerHTML = `<h3 class="shadow segoe-bold">Cabling</h3><p>Structured cabling services using standard cables:</p><ul><li>Fiber Optic</li><li>Ethernet (CAT5 / CAT6)</li><li>Twist Pair Cable</li><li>Coaxial Cable</li></ul>`;
+        document.getElementById("project-title").innerHTML = `<h1><span class="colored-text">Project</span> Reference</h1>`;
+        document.getElementById("project-caption").innerHTML = `Some of the projects that we have worked on:`;
+        document.getElementById("project-1").innerHTML = "Web App Data Digitalization";
+        document.getElementById("project-2").innerHTML = "Cable System Infrastructure";
+        document.getElementById("project-3").innerHTML = "CCTV Surveillance System";
+        document.getElementById("project-4").innerHTML = "Penetration Testing Services";
+        document.getElementById("project-5").innerHTML = "Virtual Reality";
+        document.getElementById("project-6").innerHTML = "HR Management Systems";
+        document.getElementById("customer-title").innerHTML = `<h1><span class="colored-text">Customers</span> Reference</h1>`;
+        document.getElementById("customer-caption").innerHTML = `Some of our happy customers:`;
+        document.getElementById("contact-title").innerHTML = `Contact Us`;
+        document.getElementById("footer-caption").innerHTML = `Technology Solution at Your Service`;
+        document.getElementById("copyright").innerHTML = `&copy; Copyright 2025. PT. Digi Sistem Solusindo`;
+      } else {
+        lang = "id"
+        document.getElementById("nav-home").innerHTML = "Beranda";
+        document.getElementById("nav-about").innerHTML = "Tentang";
+        document.getElementById("nav-solution").innerHTML = "Solusi";
+        document.getElementById("nav-project").innerHTML = "Proyek";
+        document.getElementById("nav-customer").innerHTML = "Pelanggan";
+        document.getElementById("nav-contact").innerHTML = "Kontak Kami";
+        document.getElementById("nav-lang").innerHTML = "English";
+        document.getElementById("slider-1").innerHTML = "Dibentuk oleh tim pengembang Perangkat Lunak TI, Infrastruktur TI, dan konsultan Keamanan TI yang berpengalaman";
+        document.getElementById("slider-2").innerHTML = "Memiliki tim profesional yang berpengalaman, tujuan kami adalah melayani pelanggan kami dengan solusi yang efektif dan dapat diandalkan";
+        document.getElementById("see-more-1").innerHTML = "Lihat lebih lanjut";
+        document.getElementById("see-more-2").innerHTML = "Lihat lebih lanjut";
+        document.getElementById("about-caption").innerHTML = `Kami berkantor pusat di <span class="colored-text">jakarta, indonesia.</span> Kami menggunakan Pendekatan Konsultatif untuk mengevaluasi kebutuhan bisnis dan teknologi Anda sehingga dapat menghemat waktu dan biaya organisasi Anda melalui penggunaan teknologi yang tepat. Nilai-nilai inti kami adalah <span class="colored-text">Pertumbuhan melalui kreativitas</span>, <span class="colored-text">Mitra Konsultasi</span>, dan <span class="colored-text">Efektivitas</span>. Kami menyediakan layanan berikut:`;
+        document.getElementById("service-1").innerHTML = `<h3 class="shadow segoe-bold">Konsultasi</h3><p>Kami memberikan Konsultasi Berkualitas Tinggi untuk menjawab kebutuhan pelanggan kami dalam Solusi TI (Perangkat Keras & Perangkat Lunak)</p>`;
+        document.getElementById("service-2").innerHTML = `<h3 class="shadow segoe-bold">Pengadaan</h3><p>Bekerja sama dengan distributor resmi untuk menyediakan perangkat keras dan perangkat lunak yang hemat biaya</p>`;
+        document.getElementById("service-3").innerHTML = `<h3 class="shadow segoe-bold">Implementasi</h3><p>Didukung oleh tim yang berpengalaman dan diimplementasikan dengan lancar</p>`;
+        document.getElementById("service-4").innerHTML = `<h3 class="shadow segoe-bold">Pemeliharaan</h3><p>Kami hadir untuk mendukung Anda setelah solusi diimplementasikan dan berfungsi dengan baik untuk mendukung kinerja operasional</p>`;
+        document.getElementById("solution-title").innerHTML = `<h1><span class="colored-text">Solusi</span> Kami</h1>`;
+        document.getElementById("solution-caption").innerHTML = `Mengapa pilih <span class="colored-text">Digi Sistem Solusindo</span>?`;
+        document.getElementById("solution-1").innerHTML = `<h3 class="shadow segoe-bold">Pengembangan Perangkat Lunak</h3><ul><li>Aplikasi Seluler (Android & IOS)</li><li>Aplikasi Komputer</li><li>Aplikasi Web</li><li>Sistem Penunjang Bisnis</li><li>Sistem Manajemen Data</li><li>Realitas Virtual (VR) & Realitas Tertambah (AR)</li></ul>`;
+        document.getElementById("solution-2").innerHTML = `<h3 class="shadow segoe-bold">Keamanan</h3><ul><li>Keamanan Jaringan</li><li>Keamanan Firewall</li><li>Uji Penetrasi</li><li>Pengerasan Perangkat</li></ul>`;
+        document.getElementById("solution-3").innerHTML = `<h3 class="shadow segoe-bold">Dukungan Pemeliharaan</h3><ul><li>Pemeliharaan Preventif & Korektif</li><li>Laporan Pemeliharaan & Tinjauan Umum</li><li>Layanan Terkelola</li><li>Bantuan Dukungan Teknis</li></ul>`;
+        document.getElementById("solution-4").innerHTML = `<h3 class="shadow segoe-bold">Infrastruktur TI</h3><ul><li>Server & HCI</li><li>Penyimpanan (NAS & SAN)</li><li>Virtualisasi & Pencadangan</li><li>Infrastruktur Jaringan</li><li>Jaringan Pribadi</li><li>Manajemen Aset</li><li>Infrastruktur Perangkat Pemantauan</li><li>Cloud</li><li>CCTV & Pintu Akses</li></ul>`;
+        document.getElementById("solution-5").innerHTML = `<h3 class="shadow segoe-bold">Pemasangan Kabel</h3><p>Layanan pengkabelan terstruktur menggunakan kabel standar:</p><ul><li>Fiber Optic</li><li>Ethernet (CAT5 / CAT6)</li><li>Twist Pair Cable</li><li>Coaxial Cable</li></ul>`;
+        document.getElementById("project-title").innerHTML = `<h1>Referensi <span class="colored-text">Proyek</span></h1>`;
+        document.getElementById("project-caption").innerHTML = `Beberapa proyek yang telah kami kerjakan:`;
+        document.getElementById("project-1").innerHTML = "Digitalisasi Data Aplikasi Web";
+        document.getElementById("project-2").innerHTML = "Infrastruktur Sistem Kabel";
+        document.getElementById("project-3").innerHTML = "Sistem Pengawasan CCTV";
+        document.getElementById("project-4").innerHTML = "Layanan Pengujian Penetrasi";
+        document.getElementById("project-5").innerHTML = "Realitas Virtual";
+        document.getElementById("project-6").innerHTML = "Sistem Manajemen Sumber Daya Manusia";
+        document.getElementById("customer-title").innerHTML = `<h1>Referensi <span class="colored-text">Pelanggan</span></h1>`;
+        document.getElementById("customer-caption").innerHTML = `Beberapa pelanggan kami yang senang:`;
+        document.getElementById("contact-title").innerHTML = `Kontak Kami`;
+        document.getElementById("footer-caption").innerHTML = `Solusi Teknologi Siap Melayani Anda`;
+        document.getElementById("copyright").innerHTML = `&copy; Hak Cipta 2025. PT. Digi Sistem Solusindo`;
+      }
+    }
+  </script>
 </body>
 
 </html>
