@@ -1085,3 +1085,7 @@ cta
     opacity: 1;
   }
 }
+
+.flag {
+  width: 15px;
+}

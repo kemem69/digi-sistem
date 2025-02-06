@@ -43,7 +43,7 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right scroll-to">
           <li class="active"><a href="#home" id="nav-home">Beranda</a></li>
-          <li><a href="#about" id="nav-about">Tentang</a></li>
+          <li><a href="#about" id="nav-about">Tentang Kami</a></li>
           <li><a href="#services" id="nav-solution">Solusi</a></li>
           <li><a href="#work" id="nav-project">Proyek</a></li>
           <li><a href="#clients" id="nav-customer">Pelanggan</a></li>
@@ -57,7 +57,9 @@
             </ul>
           </li> -->
           <li><a href="#contact" id="nav-contact">Kontak Kami</a></li>
-          <li><a onclick="changeLanguage()" id="nav-lang">English</a></li>
+          <li><a onclick="changeLanguage()" id="nav-lang">
+            <img src="images/flags/gb.svg" alt="en" class="flag">
+          </a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -118,7 +120,7 @@
             <!-- </div> -->
             <span class="border-line"></span>
             <p class="lead subtitle-caption" id="about-caption">
-              Saat ini kami berkantor pusat di
+              Kami merupakan perusahaan yang bergerak dalam bidang Solusi IT yang berkantor pusat di
               <span class="colored-text">jakarta, indonesia.</span> Kami menggunakan pendekatan konsultatif untuk
               mengevaluasi kebutuhan bisnis dan teknologi Anda sehingga dapat menghemat waktu dan biaya organisasi Anda
               melalui solusi penggunaan teknologi yang tepat.<br><br>
@@ -871,17 +873,17 @@
       if (lang === "id") {
         lang = "en"
         document.getElementById("nav-home").innerHTML = "Home";
-        document.getElementById("nav-about").innerHTML = "About";
+        document.getElementById("nav-about").innerHTML = "About Us";
         document.getElementById("nav-solution").innerHTML = "Solutions";
         document.getElementById("nav-project").innerHTML = "Projects";
         document.getElementById("nav-customer").innerHTML = "Customers";
         document.getElementById("nav-contact").innerHTML = "Contact Us";
-        document.getElementById("nav-lang").innerHTML = "Bahasa";
+        document.getElementById("nav-lang").innerHTML = `<img src="images/flags/id.svg" alt="en" class="flag">`;
         document.getElementById("slider-1").innerHTML = "Formed by a team of experienced IT Software developers, IT Infrastructure, and IT Security consultants";
         document.getElementById("slider-2").innerHTML = "Houses a team of experienced professional, our goal is to serve our customer with effective and reliable solution";
         document.getElementById("see-more-1").innerHTML = "See more";
         document.getElementById("see-more-2").innerHTML = "See more";
-        document.getElementById("about-caption").innerHTML = `We are a based in <span class="colored-text">jakarta, indonesia.</span> We use Consultative Approach to evaluate your business and technology needs hence can save your organization time and cost through better use of appropriate technology.<br><br>Our core values are:<br><span class="colored-text">Growth through creativity</span><br><span class="colored-text">Consulting Partner</span><br><span class="colored-text">Effectivity</span><br><br>We provide these services:`;
+        document.getElementById("about-caption").innerHTML = `We are IT Solution company and based in <span class="colored-text">jakarta, indonesia.</span> We use Consultative Approach to evaluate your business and technology needs hence can save your organization time and cost through better use of appropriate technology.<br><br>Our core values are:<br><span class="colored-text">Growth through creativity</span><br><span class="colored-text">Consulting Partner</span><br><span class="colored-text">Effectivity</span><br><br>We provide these services:`;
         document.getElementById("service-1").innerHTML = `<h3 class="shadow segoe-bold">Consultation</h3><p>We deliver High Quality Consulting to address the needs of our customers in IT Solution (Hardware & Software)</p>`;
         document.getElementById("service-2").innerHTML = `<h3 class="shadow segoe-bold">Procurement</h3><p>Working closely with Principal and authorized distributors toprovide cost effective hardware and Software</p>`;
         document.getElementById("service-3").innerHTML = `<h3 class="shadow segoe-bold">Implementation</h3><p>Supported by experienced team and implemented seamlessly</p>`;
@@ -908,17 +910,17 @@
       } else {
         lang = "id"
         document.getElementById("nav-home").innerHTML = "Beranda";
-        document.getElementById("nav-about").innerHTML = "Tentang";
+        document.getElementById("nav-about").innerHTML = "Tentang Kami";
         document.getElementById("nav-solution").innerHTML = "Solusi";
         document.getElementById("nav-project").innerHTML = "Proyek";
         document.getElementById("nav-customer").innerHTML = "Pelanggan";
         document.getElementById("nav-contact").innerHTML = "Kontak Kami";
-        document.getElementById("nav-lang").innerHTML = "English";
+        document.getElementById("nav-lang").innerHTML = `<img src="images/flags/gb.svg" alt="en" class="flag">`;
         document.getElementById("slider-1").innerHTML = "Dibentuk oleh tim pengembang Perangkat Lunak IT, Infrastruktur IT, dan Konsultan Keamanan IT yang berpengalaman";
         document.getElementById("slider-2").innerHTML = "Dengan tim profesional yang berpengalaman, tujuan kami adalah melayani pelanggan kami dengan solusi yang efektif dan dapat diandalkan";
         document.getElementById("see-more-1").innerHTML = "Lihat lebih lanjut";
         document.getElementById("see-more-2").innerHTML = "Lihat lebih lanjut";
-        document.getElementById("about-caption").innerHTML = `Saat ini kami berkantor pusat di <span class="colored-text">jakarta, indonesia.</span> Kami menggunakan pendekatan konsultatif untuk mengevaluasi kebutuhan bisnis dan teknologi Anda sehingga dapat menghemat waktu dan biaya organisasi Anda melalui solusi penggunaan teknologi yang tepat.<br><br>Nilai utama kami adalah:<br><span class="colored-text">Pertumbuhan melalui kreativitas</span><br><span class="colored-text">Mitra Konsultasi</span><br><span class="colored-text">Efektivitas</span><br><br>Kami menyediakan layanan berikut:`;
+        document.getElementById("about-caption").innerHTML = `Kami merupakan perusahaan yang bergerak dalam bidang Solusi IT yang berkantor pusat di <span class="colored-text">jakarta, indonesia.</span> Kami menggunakan pendekatan konsultatif untuk mengevaluasi kebutuhan bisnis dan teknologi Anda sehingga dapat menghemat waktu dan biaya organisasi Anda melalui solusi penggunaan teknologi yang tepat.<br><br>Nilai utama kami adalah:<br><span class="colored-text">Pertumbuhan melalui kreativitas</span><br><span class="colored-text">Mitra Konsultasi</span><br><span class="colored-text">Efektivitas</span><br><br>Kami menyediakan layanan berikut:`;
         document.getElementById("service-1").innerHTML = `<h3 class="shadow segoe-bold">Konsultasi</h3><p>Kami memberikan Konsultasi Berkualitas Tinggi untuk menjawab kebutuhan pelanggan kami dalam Solusi TI (Perangkat Keras & Perangkat Lunak)</p>`;
         document.getElementById("service-2").innerHTML = `<h3 class="shadow segoe-bold">Pengadaan</h3><p>Bekerja sama dengan distributor resmi untuk menyediakan perangkat keras dan perangkat lunak yang hemat biaya</p>`;
         document.getElementById("service-3").innerHTML = `<h3 class="shadow segoe-bold">Implementasi</h3><p>Didukung oleh tim yang berpengalaman dan diimplementasikan dengan baik</p>`;
