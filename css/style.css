@@ -351,6 +351,26 @@ SLIDER REVOLUTION CSS
   font-family: 'segoe';
 }
 
+@media(max-width:768px) {
+  .slider-caption {
+    font-size: 16px !important;
+    max-width: 200vw;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    line-height: 20px !important;
+    margin-top: 90px !important;
+    text-align: center !important;
+  }
+
+  #see-more-1 {
+    margin-top: 150px !important;
+  }
+
+  #see-more-2 {
+    margin-top: 170px !important;
+  }
+}
+
 .slider-button a.btn-white {
   color: #000;
   background-color: #fff;
@@ -822,7 +842,8 @@ cta
   color: #fff;
 }
 
-.contact-details h4, a {
+.contact-details h4,
+a {
   margin: 20px 0;
   color: #fff;
   font-weight: 300;
